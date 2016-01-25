@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Functions that cache the inverse of matrix
+## R Programming - Programming Assignment 2: Lexical Scoping
 
-## Write a short comment describing this function
+## makeCacheMatrix creates a special "matrix" object that includes the following functions:
+## set the values of the matrix
+## get returns the values of the matrix
+## setinv sets the inverse of the matrix
+## getinv returns the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
  	## Initialize m with NULL
@@ -31,7 +35,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The cacheSolve function calculates the inverse of the matrix stored makeCacheMatrix
+## object above, but first it check to see if the inverse is already cached.
+
+## If the inverse is already cached, cacheSolve does not calculate the inverse. 
+## Instead, cacheSolve returns the cached invers
 
 cacheSolve <- function(x, ...) {
 	##get m
